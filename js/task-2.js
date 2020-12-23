@@ -11,7 +11,7 @@ const inventory = {
   },
   remove(itemName) {
     console.log(`Removing ${itemName} from inventory`);
-    this.items.filter((items) => items !== itemName);
+    this.items = this.items.filter((items) => items !== itemName);
   },
 };
 
